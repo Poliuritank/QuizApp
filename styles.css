@@ -1,0 +1,150 @@
+:root {
+	--light-blue: #005490;
+	--color-sec: #db6400;
+}
+
+* {
+	font-family: 'Inconsolata', monospace;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 10px;
+}
+
+body {
+	background-color: #cfd1e1;
+}
+
+p {
+	font-size: 1.6rem;
+	line-height: 1.5;
+}
+
+img {
+	width: 100%;
+}
+
+.container {
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 0 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+.quiz-box {
+	width: 600px;
+	margin: 0 auto;
+	box-shadow: 15px 15px 20px rgba(85, 85, 85, 0.27),
+		-15px -15px 20px rgba(255, 255, 255, 0.393);
+	padding: 2rem 5rem 5rem;
+	border-radius: 1rem;
+}
+
+.quiz-box h1 {
+	font-weight: 100;
+	font-size: 4rem;
+	text-align: center;
+	color: rgba(85, 85, 85, 0.863);
+	padding: 1rem 0;
+	width: 100%;
+	margin: 0 0 2rem 0;
+	border-radius: 1rem;
+	box-shadow: inset 3px 3px 3px rgba(18, 20, 23, 0.335),
+		inset -4px -4px 4px rgba(255, 255, 255, 0.271);
+}
+.quiz-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.quiz-header #progress,
+#count-down {
+	font-size: 1.6rem;
+	font-weight: 700;
+}
+
+.quiz-header #progress {
+	color: var(--light-blue);
+}
+.quiz-header #count-down {
+	width: 9rem;
+	text-align: center;
+	background-color: rgba(85, 85, 85, 0.863);
+	padding: 5px;
+	margin: 1px;
+	color: #fff;
+	border-radius: 8px;
+	transition: all 0.3s;
+	box-shadow: inset 3px 3px 3px rgba(18, 20, 23, 0.335),
+		inset -3px -3px 4px rgba(255, 255, 255, 0.18);
+}
+
+.quiz-box #question {
+	font-size: 1.8rem;
+	font-weight: 600;
+	color: var(--color-sec);
+	padding: 5px 0;
+}
+
+.buttons {
+	margin: 1.5rem 0 4rem 0;
+}
+.btn {
+	text-align: left;
+	background-color: #ddd;
+	width: 100%;
+	font-size: 1.8rem;
+	color: rgba(58, 58, 58, 0.797);
+	border: 1px solid transparent;
+	border-radius: 8px;
+	margin: 7px 0;
+	padding: 1rem;
+	outline: none;
+	box-shadow: inset 3px 3px 3px rgba(18, 20, 23, 0.335),
+		inset -3px -3px 4px rgba(255, 255, 255, 0.182);
+}
+
+.btn:hover {
+	cursor: pointer;
+	background-color: var(--light-blue);
+	color: #fff;
+	transition: all 0.3s;
+}
+.btn:active {
+	background-color: var(--color-sec);
+}
+
+#score {
+	color: #005490;
+	text-align: center;
+	font-size: 2rem;
+	margin: 0 0 4rem 0;
+}
+
+.quiz-repeat {
+	text-align: center;
+	margin: 0 auto;
+}
+
+.quiz-repeat a {
+	font-size: 1.6rem;
+	font-weight: 600;
+	color: #fff;
+	text-decoration: none;
+	background-color: var(--color-sec);
+	padding: 1rem;
+	border-radius: 5px;
+	transition: all 0.3s;
+}
+
+.quiz-repeat a:hover {
+	background-color: var(--light-blue);
+}
+footer {
+	color: rgba(85, 85, 85, 0.863);
+}
